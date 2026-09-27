@@ -10,7 +10,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x%20%2F%20Keras%203-FF6F00?logo=tensorflow&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/🤗%20Transformers-GPT--2-FFD21E)
-![Colab](https://img.shields.io/badge/Run%20on-Google%20Colab-F9AB00?logo=googlecolab&logoColor=white)
+
 
 </div>
 
@@ -26,7 +26,7 @@ Symphony of Algorithms explores how different families of generative neural netw
 | 🔁 | **LSTM** | Same idea, with a longer-memory recurrent cell | Keras |
 | ⚔️ | **GAN** | A generator invents 100-note phrases while an LSTM critic tries to spot the fakes | Keras |
 | 🌌 | **VAE** | Compresses whole songs into a 64-number "latent space" and samples new songs from it | PyTorch |
-| 🧠 | **Transformer (GPT-2)** | Self-attention: every note can look at every earlier note at once | PyTorch + 🤗 |
+| 🧠 | **Transformer (GPT-2)** | Self-attention: every note can look at every earlier note at once | PyTorch + HuggingFace |
 
 > Final-year B.Tech CSE (AI & ML) project, **Vellore Institute of Technology, Chennai**.
 
@@ -255,13 +255,6 @@ Then open the notebooks from inside the repo. WAV rendering additionally needs [
 
 ---
 
-## ⚠️ Limitations
-
-- **Accuracy is not musicality.** Next-note accuracy rewards predicting the most common continuation. Generated pieces can fall into repetitive loops, especially from the GRU/LSTM (17–18 distinct tokens in a 500-note piece).
-- **No listening study.** The report designs a human-evaluation protocol (harmony, rhythm, coherence, emotion), but it was not carried out.
-- **Rhythm is not modelled.** Every model predicts *which* note comes next, not *when* or for how long. Generated notes are evenly spaced.
-- **One small corpus.** 307 fan transcriptions of one franchise. How well this generalises to other genres is untested.
-
 ## 🔮 Where this could go next
 
 - Tokens that encode **timing and duration** (e.g. REMI / event-based encodings), so rhythm is learned too
@@ -269,12 +262,6 @@ Then open the notebooks from inside the repo. WAV rendering additionally needs [
 - A small **listening test** to check how the metrics line up with what people actually enjoy
 
 ---
-
-## 👩‍💻 Team
-
-**Hamshika R** · **Harshita Rajinikanth** · **Snehalatha Prakash**
-
-Supervised by **Dr. Harini S**, School of Computer Science and Engineering, VIT Chennai.
 
 ## 📚 Key references
 
