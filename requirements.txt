@@ -1,0 +1,28 @@
+# Symphony of Algorithms — dependencies
+# The notebooks were run on Google Colab with TensorFlow 2.20 / Keras 3.13 and PyTorch 2.11.
+# On Colab everything below is preinstalled except music21 and mido, which the notebooks install themselves.
+
+# MIDI / music processing
+music21>=9.1          # GRU/LSTM, GAN, VAE notebooks
+mido>=1.3             # Transformer notebook
+
+# Deep learning
+tensorflow>=2.16      # GRU/LSTM + GAN notebooks (Keras 3)
+keras>=3.0
+torch>=2.0            # VAE + Transformer notebooks
+transformers>=4.40    # Transformer notebook (GPT-2 architecture)
+
+# Numerics, metrics, plotting
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+matplotlib>=3.7
+seaborn>=0.13
+
+# Notebook environment
+jupyter>=1.0
+
+# Optional: rendering generated MIDI to WAV needs the FluidSynth program and a
+# General MIDI soundfont (not a pip package). On Colab / Ubuntu:
+#   apt-get install fluidsynth fluid-soundfont-gm
